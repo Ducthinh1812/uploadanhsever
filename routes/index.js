@@ -22,7 +22,7 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About Us' });
 });
 router.get('/hot', function(req, res, next) {
-  res.render('hot', { title: 'Host' });
+  res.render('hot', { title: 'Host',message:'' });
 });
 var fs =require('fs');
 router.post('/test',function (repuest,response){
